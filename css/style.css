@@ -58,8 +58,9 @@ section#Cabecera .fa-phone{
 .nosotros-margin {
 	padding: 10px 0 5px 0;
 }
-p.nosotros-margin {
-	margin-top: 0px;
+
+.nosotros-margin2 {
+	padding: 10px 0 5px 20px;
 }
 section#Cabecera .cabecera-der{
 	background-color: #0060AF;
@@ -289,8 +290,11 @@ li.danotabs {
 	list-style: none;
 }
 /*sección cotización*/
-#Cotizacion .venta-de-productos{
 
+section#Cotizacion {
+	margin-bottom: 50px;
+}
+#Cotizacion .venta-de-productos{
 	padding: 15px;
 	margin-bottom: 30px;
 	margin-top: 30px;
