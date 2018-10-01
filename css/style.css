@@ -1,0 +1,539 @@
+/*colores:
+#343230; gris oscuro
+#CBCCCB; gris claro
+#1A1919; negro rebajado
+#EAEDEF; blanco con más tono
+#E47836; naranja
+#DE8A3A; naranja-apagado
+#636463; gris-medio
+#2C2B29; gris-casi-negro
+*/
+html::selection{
+	overflow-x: hidden;
+	background: transparent;
+	color: transparent;
+}
+
+body{
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+p, a, label, h1, h2, h3, h4, h5, h6{
+	font-family: 'Montserrat', sans-serif;
+}
+
+section#Cabecera .cabecera-izq{
+	background-color: #3B3738;
+	padding-right: 0;
+}
+
+@media screen and (min-width:767px){
+	.solo-xs-sm{
+		display: none;
+		background-color: #0060AF;
+	}
+}
+section#Cabecera .fa-phone{
+	color:#636463;
+	font-size: 30px;
+}
+
+@media screen and (max-width:768px){
+	section#Cabecera .fa-phone{
+		font-size: 25px;
+	}
+}
+@media screen and (max-width:767px){
+	.logo-marca{
+		display: none;
+	}
+
+	.solo-xs-sm img{
+		display: block;
+		margin: auto;
+	}
+}
+
+.nosotros-margin {
+	padding: 10px 0 5px 0;
+}
+p.nosotros-margin {
+	margin-top: 0px;
+}
+section#Cabecera .cabecera-der{
+	background-color: #0060AF;
+
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+section#Cabecera .cabecera-der .content-header{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+section#Cabecera .cabecera-der .content-header h2{
+	color: #fff;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+section#Cabecera .cabecera-der .content-header h1{
+	font-size: 1.5em;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+}
+
+@media screen and (max-width:767px){
+	section#Cabecera .cabecera-der .content-header h2{
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width:480px){
+	section#Cabecera .llamanos{
+		text-align: center;
+	}
+}
+
+section#Cabecera .cabecera-der .content-header .link-PaginaWeb{
+	color: #fff;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 1em;
+}
+
+@media screen and (max-width:480px){
+	section#Cabecera .cabecera-der .content-header .links-xs{
+		display: none;
+	}
+}
+
+@media screen and (min-width:481px){
+	section#Cabecera .cabecera-der .content-header .links-lg{
+		display: none;
+	}
+}
+
+section#Cabecera .cabecera-der .content-header a.btn-Venta{
+	display: block;
+	margin: auto;
+
+	background-color: #E47836;
+	width: 90%;
+	height: 50px;
+	padding: 15px;
+
+	text-align: center;
+	text-decoration: none;
+	font-size: .75rem;
+	color: #fff;
+}
+
+@media screen and (max-width:480px){
+	section#Cabecera .cabecera-der .content-header a.btn-Venta{
+		font-size: .55rem;
+		width: 100%;
+	}
+}
+
+section#Cabecera .cabecera-der .content-header  .redes-sociales{
+	position: absolute;
+	right: 2%;
+}
+
+
+@media screen and (max-width:1172px){
+	section#Cabecera .cabecera-der .content-header h1{
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width:1077px) and (min-width:769px){
+	section#Cabecera .cabecera-der .content-header h1{
+		font-size: 1em;
+	}
+}
+
+/*Contacto*/
+section#Contacto div.formulario-contacto form#Formulario input[type="text"], input[type="tel"],input[type="email"], textarea{
+	display: flex;
+	background-color: #fff;
+	width: 100%;
+	margin-bottom: 10px;
+	border: 2px solid #0060AF;
+	border-radius: 3px;
+	padding: 10px;
+	height: 100px;
+}
+
+section#Contacto div.formulario-contacto form#Formulario textarea{
+	resize: vertical;
+	max-height: 200px;
+	min-height: 100px;
+}
+
+.anuncio-cotizar {
+	background-color: #CBCCCB;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px 0 0 10px ;
+}
+
+section#Contacto .anuncio-cotizar h5{
+	color: #0060AF;
+	font-weight: 700;
+}
+
+@media screen and (max-width:480px){
+	section#Contacto .anuncio-cotizar h2{
+		font-size: 1.2em;
+	}
+}
+
+section#Contacto div.formulario-columna h1.grosor{
+	font-weight: 700;
+}
+
+section#Contacto div.formulario-contacto form#Formulario input[type="text"], input[type="tel"], input[type="email"] {
+	height: 30px;
+}
+
+section#Contacto div.formulario-contacto form#Formulario .btn-cotizarFormulario{
+	text-align: center;
+	background-color: #0060AF;
+	font-weight: 500;
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	cursor: pointer;
+	border-style: none;
+	padding: 20px 0 53px 0;
+}
+
+
+
+@media screen and (max-width:1226px){
+	section#Contacto div.formulario-contacto form#Formulario .-cotizarFormulario{
+		font-size: .90em;
+		width: 80%;
+
+	}
+}
+.bg {
+	background-color: rgba(246, 246, 246, .8);
+	padding: 30px;
+}
+section#Contacto div.formulario-columna{
+	background-color: rgba(246, 246, 246, .8);
+	padding: 30px;
+}
+
+.contacto-footer{
+	padding: 20px;
+	background-color: #1A1919;
+}
+
+.contacto-footer p{
+	color: #fff;
+	text-align: center;
+	font-size: 1.5em;
+}
+ul.row.justify-content-left.danodrenul {
+	margin-left: -57px;
+}
+.btn-danosa {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	background: none;
+	color: black;
+	width: 250px;
+	height: 100%;
+	float: left;
+	justify-content: left;
+	outline: none;
+	cursor: pointer;
+	padding: 10px;
+	margin: 0 5px;border-style: none;
+}
+.btn-danosa.active {
+	border-style: none;
+	border: 2px solid #0060AF;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.btn-danosa:focus {
+	border-style: none;
+	border: 2px solid #0060AF;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+
+
+
+
+li.danotabs {
+	list-style: none;
+}
+/*sección cotización*/
+#Cotizacion .venta-de-productos{
+
+	padding: 15px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+#Cotizacion .tabContainer{
+	width: 100%;
+}
+
+#Cotizacion .tabContainer .buttonContainer{
+	height: 15%;
+}
+
+#Cotizacion .tabContainer .buttonContainer button{
+	width: 250px;
+	height: 100%;
+	float: left;
+	border-bottom: 1px solid #0060AF;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+	margin: 0 5px;
+}
+
+#Cotizacion .tabContainer .buttonContainer button:hover{
+	background-color: #d7d4d4;
+}
+
+#Cotizacion .tabContainer .tabPanel{
+	height: 85%;
+	text-align: left;
+	padding-top: 50px;
+	box-sizing: border-box;
+	display: none;
+}
+
+#Cotizacion .tabContainer .tabPanel .btn-Descargar{
+	display: block;
+
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+
+	background-color: #0060AF;
+	width: 50%;
+	height: 50px;
+	padding: 10px;
+
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	color: #fff;
+	margin-top: 70px;
+}
+
+#Cotizacion .slider-productos{
+	background-color: #fff;
+	padding: 15px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+#Cotizacion a.btn-cotizar{
+	display: block;
+	margin: auto;
+
+	background-color: #0060AF;
+	width: 50%;
+	height: 80px;
+	padding: 20px;
+
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width:992px){
+	#Cotizacion a.btn-cotizar{
+		font-size: 1em;
+	}
+}
+
+/*Sección Nosotros*/
+#Nosotros{
+	padding: 50px 20px;
+	background-color: #343230;
+}
+
+#Nosotros img{
+	display: block;
+	margin: auto;
+}
+
+#Nosotros h4{
+	color: #fff;
+	margin-top: 10px;
+}
+
+#Nosotros h3{
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+#Nosotros p{
+	color: #fff;
+	text-align: center;
+}
+
+/*--footer-map--*/
+.mapa iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/*footer*/
+section#Footer .footer {
+    background: #343230;
+    padding: 1em;
+    padding: 25px 0 10px 0;
+}
+
+section#Footer .copywrite {
+    text-align: center;
+}
+
+section#Footer .copywrite p{
+    color: #fff;
+    font-size: 1em;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+@media screen and (max-width:480px){
+	section#Footer .copywrite p{
+		font-size: .75em;
+	}
+	.contacto-footer p {
+	    color: #fff;
+	    text-align: center;
+	  	font-size: 1em; */
+	}
+	.contacto-footer {
+		padding: 10px 0 0px 0;
+	}
+ h1	, h3{
+	 font-size: 1.5rem;
+ }
+ .btn-danosa {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 16px;
+     background: none;
+     color: black;
+     width: 150px;
+     height: 100%;
+     float: left;
+     justify-content: left;
+     outline: none;
+     cursor: pointer;
+     padding: 10px;
+     /* margin: 0 5px; */
+     border-style: none;
+ }
+ h4 {
+	 font-size: 1.3rem;
+ }
+ h5 {
+	 font-size: 1.1rem;
+ }
+ #Nosotros h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#Cotizacion .venta-de-productos {
+  padding: 1px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+
+#Cotizacion a.btn-cotizar {
+	text-align: center;
+			background-color: #0060AF;
+			font-weight: 500;
+			width: 100%;
+			height: 50px;
+			color: #fff;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1.5em;
+			cursor: pointer;
+			border-style: none;
+			padding-bottom: 50px;
+			margin-bottom: 50px;
+}
+
+
+}
+
+section#Footer .copywrite p a {
+	color: #fff;
+	font-weight: 400;
+	vertical-align: text-bottom;
+}
+
+section#Footer .copywrite p a:hover{
+    color:#fff;
+    font-weight: 800;
+}
+
+#Contacto .video-acomodo{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#Nosotros .imagen-redondeada{
+	background-color: #0060AF;
+	border-radius: 100%;
+	height: 170px;
+	width: 170px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+#Nosotros .imagen-redondeada img{
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
