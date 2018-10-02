@@ -8,7 +8,7 @@
 #636463; gris-medio
 #2C2B29; gris-casi-negro
 */
-html::selection{
+html{
 	overflow-x: hidden;
 	background: transparent;
 	color: transparent;
@@ -28,6 +28,10 @@ section#Cabecera .cabecera-izq{
 	background-color: #3B3738;
 	padding-right: 0;
 }
+.movil-left {
+	padding-left: 25px;
+}
+
 
 @media screen and (min-width:767px){
 	.solo-xs-sm{
@@ -36,8 +40,9 @@ section#Cabecera .cabecera-izq{
 	}
 }
 section#Cabecera .fa-phone{
-	color:#636463;
-	font-size: 30px;
+	color:#ffffff;
+	font-size: 23px;
+	margin-right: 5px;
 }
 
 @media screen and (max-width:768px){
@@ -57,7 +62,7 @@ section#Cabecera .fa-phone{
 }
 
 .nosotros-margin {
-	padding: 10px 0 5px 0;
+	padding: 15px 0 5px 0;
 }
 
 .nosotros-margin2 {
@@ -65,17 +70,22 @@ section#Cabecera .fa-phone{
 }
 section#Cabecera .cabecera-der{
 	background-color: #0060AF;
-
-	padding-bottom: 10px;
-	padding-top: 10px;
 }
+.logo {
+	background-color: #0060AF;
+}
+.logo1 {
+	background-color: #3b3738;
 
+}
 section#Cabecera .cabecera-der .content-header{
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 }
-
+.gray {
+	background: #3b3738;
+}
 section#Cabecera .cabecera-der .content-header h2{
 	color: #fff;
 	text-align: center;
@@ -96,7 +106,7 @@ section#Cabecera .cabecera-der .content-header h1{
 }
 
 @media screen and (min-width:480px){
-	section#Cabecera .llamanos{
+	 .llamanos{
 		text-align: center;
 	}
 }
@@ -112,11 +122,16 @@ section#Cabecera .cabecera-der .content-header .link-PaginaWeb{
 	section#Cabecera .cabecera-der .content-header .links-xs{
 		display: none;
 	}
+
+
 }
 
 @media screen and (min-width:481px){
 	section#Cabecera .cabecera-der .content-header .links-lg{
 		display: none;
+	}
+	.movil {
+		justify-content: center;
 	}
 }
 
@@ -216,10 +231,17 @@ section#Contacto div.formulario-contacto form#Formulario .btn-cotizarFormulario{
 	left: 50%;
 	transform: translateX(-50%);
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	cursor: pointer;
 	border-style: none;
 	padding: 20px 0 53px 0;
+}
+
+section#Contacto div.formulario-contacto form#Formulario .btn-cotizarFormulario:hover{
+	background-color: transparent;
+	border: 1px solid #0060AF;
+	color: #0060AF;
+
 }
 
 
@@ -241,14 +263,14 @@ section#Contacto div.formulario-columna{
 }
 
 .contacto-footer{
-	padding: 20px;
+	padding-top: 18px;
 	background-color: #1A1919;
 }
 
 .contacto-footer p{
 	color: #fff;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 ul.row.justify-content-left.danodrenul {
 	margin-left: -57px;
@@ -267,24 +289,23 @@ ul.row.justify-content-left.danodrenul {
 	padding: 10px;
 	margin: 0 5px;border-style: none;
 }
-.btn-danosa.active {
+.active {
 	border-style: none;
-	border: 2px solid #0060AF;
+	border: 1px solid #0060AF;
 	border-top: none;
 	border-left: none;
 	border-right: none;
 }
-
 .btn-danosa:focus {
-	border-style: none;
-	border: 2px solid #0060AF;
-	border-top: none;
-	border-left: none;
-	border-right: none;
+outline: none;
 }
-
-
-
+.btn-danosa:hover {
+	background:  #0060AF;
+	color: white;
+}
+div.active {
+	border: none;
+}
 
 
 li.danotabs {
@@ -365,12 +386,10 @@ section#Cotizacion {
 #Cotizacion a.btn-cotizar{
 	display: block;
 	margin: auto;
-
 	background-color: #0060AF;
 	width: 50%;
 	height: 80px;
 	padding: 20px;
-
 	text-align: center;
 	text-decoration: none;
 	font-size: 1.5em;
@@ -378,8 +397,14 @@ section#Cotizacion {
 	margin-bottom: 20px;
 }
 
+#Cotizacion a.btn-cotizar:hover{
+	background-color: transparent;
+	border: 1px solid #0060AF;
+	color: #0060AF;
+
+}
 @media screen and (max-width:992px){
-	#Cotizacion a.btn-cotizar{
+	#Cotizacion a.{
 		font-size: 1em;
 	}
 }
@@ -436,6 +461,19 @@ section#Footer .copywrite p{
 }
 
 @media screen and (max-width:480px){
+
+	#Cotizacion a.btn-cotizar{
+		display: block;
+		margin: auto;
+		background-color: #0060AF;
+		width: 80%;
+		height: 50px;
+		padding: 13px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 1em;
+
+	}
 	section#Footer .copywrite p{
 		font-size: .75em;
 	}
@@ -484,7 +522,7 @@ section#Footer .copywrite p{
 }
 
 
-#Cotizacion a.btn-cotizar {
+#Cotizacion a. {
 	text-align: center;
 			background-color: #0060AF;
 			font-weight: 500;
@@ -500,6 +538,10 @@ section#Footer .copywrite p{
 			border-style: none;
 			padding-bottom: 50px;
 			margin-bottom: 50px;
+}
+
+#Cotizacion a.:hover {
+
 }
 
 
